@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" minHeight="500.0" minWidth="500.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="feecollector.CollectorController">
+   <children>
+      <Label layoutX="81.0" layoutY="80.0" text="Trainee ID" />
+      <Label layoutX="78.0" layoutY="209.0" text="Batch Time" />
+      <Label layoutX="83.0" layoutY="252.0" text="Total Fee" />
+      <Label layoutX="95.0" layoutY="294.0" text="Paid" />
+      <Label layoutX="88.0" layoutY="334.0" text="Balance" />
+      <Button layoutX="201.0" layoutY="449.0" mnemonicParsing="false" onAction="#doUpdate" prefHeight="25.0" prefWidth="97.0" text="Update" />
+      <Label layoutX="89.0" layoutY="167.0" text="Course" />
+      <Label layoutX="108.0" layoutY="402.0" text="Received Now">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRec" layoutX="210.0" layoutY="399.0" prefHeight="25.0" prefWidth="159.0" />
+      <TextField fx:id="txtCourse" layoutX="186.0" layoutY="163.0" />
+      <TextField fx:id="txtTime" layoutX="186.0" layoutY="205.0" />
+      <TextField fx:id="txtFee" layoutX="186.0" layoutY="248.0" />
+      <TextField fx:id="txtPaid" layoutX="186.0" layoutY="290.0" />
+      <TextField fx:id="txtBal" layoutX="186.0" layoutY="330.0" />
+      <Button layoutX="369.0" layoutY="76.0" mnemonicParsing="false" onAction="#doSearch" text="Get Details" />
+      <Line endX="63.499969482421875" endY="-3.814697265625E-6" layoutX="238.0" layoutY="44.0" startX="-62.50001525878906" startY="-3.814697265625E-6" />
+      <Line endX="271.0" layoutX="229.0" layoutY="374.0" startX="-229.0" />
+      <Label layoutX="187.0" layoutY="16.0" text="Fee Collector">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="ComboID" editable="true" layoutX="186.0" layoutY="76.0" prefWidth="150.0" />
+      <Label layoutX="71.0" layoutY="123.0" text="Trainee Name" />
+      <TextField fx:id="txtName" layoutX="185.0" layoutY="119.0" />
+   </children>
+</AnchorPane>
